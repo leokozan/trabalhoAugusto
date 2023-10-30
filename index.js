@@ -39,7 +39,6 @@ function calcularSomaDivisores() {
 
 // Exercício 2
 function calcularDistancia() {
-  // Obtém as coordenadas dos pontos A e B a partir das entradas do usuário
   var x1 = parseFloat(document.getElementById("x1").value);
   var y1 = parseFloat(document.getElementById("y1").value);
   var x2 = parseFloat(document.getElementById("x2").value);
@@ -56,19 +55,16 @@ function contarPalavras() {
   var inputElement = document.getElementById("fraseInput");
   var resultadoElement = document.getElementById("resultado2");
 
-  // Obter a frase do campo de entrada
   var frase = inputElement.value;
 
-  // Verificar se a entrada não está vazia
   if (frase.trim() === "") {
     resultadoElement.innerHTML = "Por favor, digite uma frase.";
     return;
   }
 
-  // Converter a frase para letras minúsculas
+  
   frase = frase.toLowerCase();
 
-  // Dividir a frase em palavras usando espaços como separadores
   var palavras = frase.split(' ');
 
   var contagemPalavras = {};
